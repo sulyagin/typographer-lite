@@ -1,0 +1,35 @@
+body {
+	background-color: #222;
+	color: #fff;
+	font: normal 20px/26px Arial, Helvetica, sans-serif;
+	padding: 20px 0;
+}
+a, a:hover, a:active, a:visited {
+	color: #fff;
+}
+a:hover {
+	text-decoration: none;
+}
+.container {
+	max-width: 800px;
+	width: 100%;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+.example__text, .example__code {
+	display: inline-block;
+	background-color: #454545;
+	padding: 5px 30px;
+}
+.example__text-wrapper {
+	display: flex;
+	margin: 0 60px;
+}
+.example__text {
+	margin: 0 10px;
+}
+.example__code {
+	font-size: 18px;
+	padding: 20px 30px;
+	margin: 0;
+}
