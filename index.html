@@ -9,6 +9,10 @@
     <div class="container">
         <h1>Typographer Lite</h1>
         A lightweight library for basic text typography on your website
+        <div class="links">
+            <a class="btn" href="https://github.com/sulyagin/typographer-lite/releases">Download</a>
+            <a class="btn btn--bw" href="https://github.com/sulyagin/typographer-lite">GitHub</a>
+        </div>
         <h2>Features</h2>
         <ul>
             <li>Written in vanilla javascript, no dependencies needed</li>
@@ -19,13 +23,13 @@
         </ul>
         <h2>Examples</h2>
     </div>
-    <div class="example__text-wrapper">
-        <div class="example__text example__text--en">
+    <div class="examples">
+        <div class="examples__text example__text--en">
             <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
             <p>"What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p>
             <p>Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad. "How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was unable to do because...</p>
         </div>
-        <div class="example__text example__text--ru">
+        <div class="examples__text example__text--ru">
             <p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло. Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами.</p>
             <p>"Что со мной случилось?" - подумал он. Это не было сном. Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах. Над столом, где были разложены распакованные образцы сукон - Замза был коммивояжером, - висел портрет, который он недавно вырезал из иллюстрированного журнала и вставил в красивую золоченую рамку. На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в которой целиком исчезала ее рука.</p>
             <p>Затем взгляд Грегора устремился в окно, и пасмурная погода - слышно было, как по жести подоконника стучат капли дождя - привела его и вовсе в грустное настроение. "Хорошо бы еще немного поспать и забыть всю эту чепуху", - подумал он, но это было совершенно неосуществимо, он...</p>
@@ -34,25 +38,25 @@
     <div class="container">
         <h2>Usage</h2>
         <p>Simply include</p>
-        <code class="example__code">
+        <code class="examples__code">
             &lt;script src="typographer-lite.min.js"&gt;&lt;/script&gt;
         </code>
-        <p>Initialize globally</p>
-        <code class="example__code">
+        <p>And initialize globally with locale</p>
+        <code class="examples__code">
             const typographer = new typographerLite({ locale: 'en_US' });
         </code>
         <p>Or only for selected container</p>
-        <pre class="example__code">
+        <pre class="examples__code">
 const typographer = new typographerLite({
-    container: '.example__text',
-    locale: 'en_US'
+  container: '.example__text',
+  locale: 'en_US'
 });</pre>
         <h2>Options</h2>
-        <pre class="example__code">
+        <pre class="examples__code">
 {
-    container: 'body',
-    excludeTags: [ 'script', 'style', 'title', 'code' ],
-    locale: 'ru_RU'
+  container: 'body',
+  excludeTags: [ 'script', 'style', 'title', 'code' ],
+  locale: 'ru_RU'
 }</pre>
         <h2>License</h2>
         <p>The MIT License (MIT)</p>
@@ -60,7 +64,7 @@ const typographer = new typographerLite({
         <p><a href="https://github.com/typograf">Typograf</a> library by <a href="https://github.com/hcodes">Denis Seleznev</a> for some typography regular expressions</p>
     </div>
 </body>
-<script src="typographer-lite.min.js" type="text/javascript"></script>
+<script src="//cdn.jsdelivr.net/gh/sulyagin/typographer-lite/dist/typographer-lite.min.js" type="text/javascript"></script>
 <script>
 	const typographerEn = new typographerLite({ locale: 'en_US', container: '.example__text--en' });
 	const typographerRu = new typographerLite({ locale: 'ru_RU', container: '.example__text--ru' });
