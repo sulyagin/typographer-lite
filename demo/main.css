@@ -1,0 +1,162 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+  font: normal 20px/26px Arial, Helvetica, sans-serif;
+  padding: 20px 0;
+}
+
+@media (max-width: 880px) {
+  body {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+a {
+  color: #fff;
+}
+
+a:hover, a:active, a:visited {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 920px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.examples {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 60px;
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  .examples {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 880px) {
+  .examples {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .examples {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  .examples {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.examples__text {
+  display: inline-block;
+  background-color: #454545;
+  padding: 5px 30px;
+  margin: 0 20px;
+}
+
+@media (max-width: 880px) {
+  .examples__text {
+    max-height: 400px;
+    overflow: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .examples__text {
+    max-height: none;
+  }
+}
+
+.examples__code {
+  display: inline-block;
+  overflow: auto;
+  width: 100%;
+  padding: 20px 30px;
+  margin: 0;
+  background-color: #454545;
+}
+
+@media (max-width: 880px) {
+  .examples__code {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .examples__code {
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.links {
+  display: block;
+  margin-top: 20px;
+}
+
+.links a:first-child {
+  margin-right: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #268a16;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000;
+  font: bold 16px/16px Arial, Helvetica, sans-serif;
+  padding: 8px 18px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn--bw {
+  background-color: transparent;
+  color: #fff;
+  padding: 7px 18px;
+  border: 1px solid #dedede;
+}
+/*# sourceMappingURL=main.css.map */

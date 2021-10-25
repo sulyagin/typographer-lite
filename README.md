@@ -12,7 +12,7 @@ A lightweight library for basic text typography on your website
 * Two locales are supported, English and Russian
 * No additional CSS needed
 
-### Usage
+### Usage on website
 
 Simply include
 
@@ -39,6 +39,25 @@ Options
     excludeTags: [ 'script', 'style', 'title', 'code' ],
     locale: 'ru_RU'
 }
+```
+
+### Usage in your app
+
+Installation via npm
+
+```npm install typographer-lite```
+
+Or installation via yarn
+
+```yarn add typographer-lite```
+
+Example of usage
+
+```
+import typographerLite from 'typographer-lite'; // or use require()
+
+const typographer = new typographerLite({ locale: 'ru_RU' });
+console.log(typographer.format('текст с "кавычками елочками"'));
 ```
 
 ### License

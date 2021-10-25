@@ -1,11 +1,14 @@
 {
   "name": "typographer-lite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight library for basic text typography on your website written in vanilla JavaScript",
-  "main": "src/typographer-lite.js",
+  "homepage": "https://sulyagin.github.io/typographer-lite/",
+  "bugs": "https://github.com/sulyagin/typographer-lite/issues",
+  "main": "dist/typographer-lite.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "deploy": "gh-pages -d demo"
   },
   "repository": {
     "type": "git",
@@ -13,18 +16,21 @@
   },
   "keywords": [
     "typography",
+    "quotes",
+    "dashes",
+    "apostrophe",
     "text"
   ],
   "author": "Fedor Sulyagin <fedor@sulyagin.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/preset-env": "^7.14.4",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
     "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "gh-pages": "^3.2.3",
+    "rollup": "^2.51.2",
     "rollup-plugin-terser": "^7.0.2"
-  },
-  "dependencies": {
-    "@rollup/plugin-node-resolve": "^13.0.0",
-    "rollup": "^2.51.2"
   }
 }
