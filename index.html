@@ -10,7 +10,7 @@
         <h1>Typographer Lite</h1>
         A lightweight library for basic text typography on your website
         <div class="links">
-            <a class="btn" href="https://github.com/sulyagin/typographer-lite/releases">Download</a>
+            <a class="btn" href="https://github.com/sulyagin/typographer-lite/archive/refs/heads/master.zip">Download</a>
             <a class="btn btn--bw" href="https://github.com/sulyagin/typographer-lite">GitHub</a>
         </div>
         <h2>Features</h2>
@@ -36,7 +36,7 @@
         </div>
     </div>
     <div class="container">
-        <h2>Usage</h2>
+        <h2>Usage on website</h2>
         <p>Simply include</p>
         <code class="examples__code">
             &lt;script src="typographer-lite.min.js"&gt;&lt;/script&gt;
@@ -58,13 +58,29 @@ const typographer = new typographerLite({
   excludeTags: [ 'script', 'style', 'title', 'code' ],
   locale: 'ru_RU'
 }</pre>
+        <h2>Usage in app</h2>
+        <p>Installation via npm</p>
+        <code class="examples__code">
+npm install typographer-lite
+        </code>
+        <p>Or installation via yarn</p>
+        <code class="examples__code">
+yarn add typographer-lite
+        </code>
+        <p>Example of usage</p>
+        <pre class="examples__code">
+import typographerLite from 'typographer-lite'; // or use require()
+
+const typographer = new typographerLite({ locale: 'ru_RU' });
+console.log(typographer.format('текст с "кавычками елочками"'));
+        </pre>
         <h2>License</h2>
         <p>The MIT License (MIT)</p>
         <h2>Thanks</h2>
         <p><a href="https://github.com/typograf">Typograf</a> library by <a href="https://github.com/hcodes">Denis Seleznev</a> for some typography regular expressions</p>
     </div>
 </body>
-<script src="//cdn.jsdelivr.net/gh/sulyagin/typographer-lite/dist/typographer-lite.min.js" type="text/javascript"></script>
+<script src="typographer-lite.min.js" type="text/javascript"></script>
 <script>
 	const typographerEn = new typographerLite({ locale: 'en_US', container: '.example__text--en' });
 	const typographerRu = new typographerLite({ locale: 'ru_RU', container: '.example__text--ru' });
