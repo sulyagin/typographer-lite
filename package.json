@@ -1,6 +1,6 @@
 {
   "name": "typographer-lite",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight library for basic text typography on your website written in vanilla JavaScript",
   "homepage": "https://sulyagin.github.io/typographer-lite/",
   "bugs": "https://github.com/sulyagin/typographer-lite/issues",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/feador/typographer-lite.git"
+    "url": "git+https://github.com/sulyagin/typographer-lite.git"
   },
   "keywords": [
     "typography",
